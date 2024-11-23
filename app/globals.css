@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-source-sans: 'Source Sans 3', sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-source-sans);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  @media (max-width: 768px) {
+    .rounded-bl-\[200px\] {
+      border-bottom-left-radius: 100px;
+    }
+  }
+}
+
